@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+         
+        function fn(){
+            var c=document.getElementById('p1').value;
+            var d=document.createElement('p')
+            d.append(c)
+            document.querySelector('div').appendChild(d)
+            
+
+        } 
+        function fn1()
+        {
+            var e=document.getElementById('p1')
+            var f=document.querySelector('p')
+            
+            f.parentElement.removeChild(f)
+        }
+    </script> 
+</head>
+<body>
+   
+    <div>
+        <label>enter name</label>
+        <input id="p1"  type="text" value=""/>
+        <button onclick="fn()", id="p1">adding elements</button>
+        <button onclick="fn1()">deleting elements</button>
+
+    </div>
+    
+</body>
+</html>
